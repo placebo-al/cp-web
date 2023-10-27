@@ -1,0 +1,30 @@
+html { font-family:Calibri, Arial, Helvetica, sans-serif; font-size:11pt; }
+body { margin-left: 0.7in; margin-right: 0.7in; margin-top: 0.75in; margin-bottom: 0.75in; }
+div { padding-bottom : 2em ;}
+table { border-collapse:collapse; page-break-after:always }
+td { padding:0.4em; vertical-align:bottom; font-family:'Arial' }
+td.day { text-align:center; font-weight:bold; font-size:14pt }
+td.exercises { font-size: 12pt; }
+td.sets { padding-left: 2em; padding-right: 2em; }
+td.style5 { font-weight:bold; font-size:16pt }
+td.style7 { text-align:center; }
+td.style9 { font-weight:bold; color:#000000; }
+td.style11 { text-align:center; background-color:#D8D8D8 }
+td.style14 { font-weight:bold; background-color:#D8D8D8 }
+.week { background-color: white; }
+.movementprep { background-color: white; }
+.strength { background-color: white; }
+.prehab { background-color: white; }
+.esd { background-color: white; }
+.physioball { background-color: white; }
+.regen { background-color: white; }
+
+
+/* Phase2 */
+td.style4 { text-align:center; font-family:'Arial'; }
+td.style12 { text-align:center; }
+td.style13 { text-align:center; font-weight:bold; }
+
+
+
+

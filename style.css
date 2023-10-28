@@ -1,7 +1,7 @@
 html { font-family:Calibri, Arial, Helvetica, sans-serif; font-size:11pt; }
 body { margin-left: 0.7in; margin-right: 0.7in; margin-top: 0.75in; margin-bottom: 0.75in; }
 div { padding-bottom : 2em ;}
-table { border-collapse:collapse; page-break-after:always }
+table { border-collapse:collapse; page-break-after:always; margin-bottom: 2em; }
 td { padding:0.4em; vertical-align:bottom; font-family:'Arial' }
 td.day { text-align:center; font-weight:bold; font-size:14pt }
 td.exercises { font-size: 12pt; }
@@ -20,10 +20,6 @@ td.style14 { font-weight:bold; background-color:#D8D8D8 }
 .regen { background-color: white; }
 
 
-/* Phase2 */
-td.style4 { text-align:center; font-family:'Arial'; }
-td.style12 { text-align:center; }
-td.style13 { text-align:center; font-weight:bold; }
 
 
 

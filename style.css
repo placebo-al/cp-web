@@ -19,9 +19,9 @@ td.style14 { font-weight:bold; background-color:#D8D8D8 }
 
 /* Making the expanding part */
 
-/* details {
+  details {
     user-select: none;
-  } */
+  }
   
   details[open] {
     padding: 0.5em;
@@ -40,9 +40,9 @@ td.style14 { font-weight:bold; background-color:#D8D8D8 }
     padding: 0.5em;
   }
   
-  /* summary::-webkit-details-marker {
-    display: none;
+    summary::-webkit-details-marker {
+    display:none
   }
- */
+
 
 

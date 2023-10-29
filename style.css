@@ -19,29 +19,30 @@ td.style14 { font-weight:bold; background-color:#D8D8D8 }
 
 /* Making the expanding part */
 
-details {
+/* details {
     user-select: none;
-  }
-  
-/*   details>summary span.icon {
-    width: 24px;
-    height: 24px;
-    transition: all 0.3s;
-    margin-left: auto;
-  }
-  
-  details[open] summary span.icon {
-    transform: rotate(180deg);
   } */
   
+  details[open] {
+    padding: 0.5em;
+  }
+
+  details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em;
+  }
+
   summary {
     display: flex;
     cursor: pointer;
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
   }
   
-  summary::-webkit-details-marker {
+  /* summary::-webkit-details-marker {
     display: none;
   }
-
+ */
 
 

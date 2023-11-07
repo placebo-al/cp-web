@@ -1,23 +1,90 @@
-html { font-family:Calibri, Arial, Helvetica, sans-serif; font-size:11pt; }
-body { margin-left: 0.7in; margin-right: 0.7in; margin-top: 0.75in; margin-bottom: 0.75in; }
-div { padding-bottom : 2em; }
-table { border-collapse:collapse; page-break-after:always; margin-bottom: 2em; }
-td { padding:0.4em; vertical-align:bottom; font-family:'Arial' }
-td.day { text-align:center; font-weight:bold; font-size:14pt }
-td.exercises { font-size: 12pt; }
-td.sets { padding-left: 2em; padding-right: 2em; }
-td.style7 { text-align:center; }
-td.style9 { font-weight:bold; color:#000000; }
-td.style14 { font-weight:bold; background-color:#D8D8D8 }
-.week { background-color: white; }
-.movementprep { background-color: white; }
-.strength { background-color: white; }
-.prehab { background-color: white; }
-.esd { background-color: white; }
-.physioball { background-color: white; }
-.regen { background-color: white; }
+html {
+    box-sizing: border-box;
+    background: #eeeeee;
+    font-family: 'helvetica neue';
+    font-size: 20px;
+    font-weight: 200;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .site-wrap {
+    max-width: 700px;
+    margin: 70px auto;
+    background: white;
+    padding: 40px;
+    text-align: justify;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+    transform: scale(0.98);
+    transition: transform 0.5s;
+  }
+  
+  body.fixed-nav .site-wrap {
+    transform: scale(1);
+  }
+  
+  header {
+    text-align: center;
+    background-color: grey;
+    height: 10vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 2vw;
+    text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
+  }
+  
+  nav {
+    background: black;
+    top: 0;
+    width: 100%;
+    transition:all 0.5s;
+    position: relative;
+    z-index: 1;
+  }
+  
+  body.fixed-nav nav {
+    position: fixed;
+    box-shadow: 0 5px 0 rgba(0,0,0,0.1);
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ 
+  nav a {
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    color: white;
+    transition: all 0.2s;
+    text-transform: uppercase;
+  }
 
-/* Making the expanding part */
+  /* Making the expanding part */
 
   details {
     user-select: none;
@@ -44,5 +111,14 @@ td.style14 { font-weight:bold; background-color:#D8D8D8 }
     display:none
   }
 
+  /* Making the tables and cells look better */
 
-
+div { padding-bottom : 2em; }
+table { border-collapse:collapse; page-break-after:always; margin-bottom: 2em; }
+td { padding:0.4em; vertical-align:bottom; font-family:'Arial' }
+td.day { text-align:center; font-weight:bold; font-size:14pt }
+td.exercises { font-size: 12pt; }
+td.sets { padding-left: 2em; padding-right: 2em; }
+td.style7 { text-align:center; }
+td.style9 { font-weight:bold; color:#000000; }
+td.style14 { font-weight:bold; background-color:#D8D8D8 }

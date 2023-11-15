@@ -1,0 +1,146 @@
+/* This is the initial styling for the div tables */
+
+#abdominals {
+  width: 50%;
+  float: right;
+}
+
+#NoviceWeights {
+  width: 50%;
+  float: left;
+}
+
+section{
+  clear: left;
+}
+
+.divTable {
+    box-sizing: border-box;
+    display:table; 
+    width: 75%; 
+    padding: 20px;
+}
+
+.header-cell {
+    display: table-cell;
+    padding: 10px;
+    font-size: 1.1em;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.row { 
+    display:table-header-group;
+}
+
+.cell {
+    display:table-cell;
+    padding: 0.5em;
+    white-space: nowrap;
+}
+
+#calendar .cell {
+    background-color: aliceblue;
+    border: 1px;
+}
+
+/* This is the styling for the nav bar and some of the overall html styling */
+
+html {
+    box-sizing: border-box;
+    background: #eeeeee;
+    font-family: 'helvetica neue';
+    font-size: 20px;
+    font-weight: 200;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  body.fixed-nav .site-wrap {
+    transform: scale(1);
+  }
+  
+  header {
+    text-align: center;
+    background-color: grey;
+    height: 10vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 2vw;
+    text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
+  }
+
+  h3 {
+    padding-left: 2em;
+  }
+  
+  nav {
+    background: black;
+    top: 0;
+    width: 100%;
+    transition:all 0.5s;
+    position: relative;
+    z-index: 1;
+  }
+  
+  body.fixed-nav nav {
+    position: fixed;
+    box-shadow: 0 5px 0 rgba(0,0,0,0.1);
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+   nav a {
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    color: white;
+    transition: all 0.2s;
+    text-transform: uppercase;
+  }
+
+
+  /* This is the styling for the details and summary part */
+
+  details {
+    user-select: none;
+  }
+  
+  details[open] {
+    padding: 0.5em;
+  }
+
+  details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em;
+  }
+
+  summary {
+    display: flex;
+    cursor: pointer;
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+  }
+  

@@ -7,25 +7,27 @@ html {
   }
   
   body {
-    margin: 0;
+    margin: 0%;
   }
   
   *, *:before, *:after {
     box-sizing: inherit;
   }
   
-  .site-wrap {
+  .container {
     max-width: 700px;
-    margin: 70px auto;
+    margin-top: 0%;
+    margin-right: 5%;
+    margin-left: 5%;
     background: white;
-    padding: 40px;
+    padding: 0px;
     text-align: justify;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
     transform: scale(0.98);
     transition: transform 0.5s;
   }
   
-  body.fixed-nav .site-wrap {
+  .fixed-nav {
     transform: scale(1);
   }
   
@@ -115,7 +117,7 @@ html {
 
 div { padding-bottom : 2em; }
 table { border-collapse:collapse; page-break-after:always; margin-bottom: 2em; }
-td { padding:0.4em; vertical-align:bottom; font-family:'Arial' }
+td { padding:0.4em; vertical-align:center; font-family:'Arial' }
 td.day { text-align:center; font-weight:bold; font-size:14pt }
 td.exercises { font-size: 12pt; }
 td.sets { padding-left: 2em; padding-right: 2em; }

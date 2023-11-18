@@ -15,7 +15,8 @@ html {
   }
   
   .container {
-    max-width: 700px;
+    width: 100%;
+    max-width: 750px;
     margin-top: 0%;
     margin-right: 5%;
     margin-left: 5%;
@@ -113,7 +114,7 @@ html {
     display:none
   }
 
-  /* Making the tables and cells look better */
+  /* Making the CP tables and cells look better */
 
 div { padding-bottom : 2em; }
 table { border-collapse:collapse; page-break-after:always; margin-bottom: 2em; }

@@ -117,6 +117,9 @@ let programme1 = [
 { exercise: "Sit Ups", sets: 3, reps: 5 }
 ];
 
+let table4 = document.querySelector("table.Programme1");
+generateTable(table4, programme1);
+
 
 let Programme2 = [
   { exercises: "Squat Thrusts", sets: 3, reps: 5 },

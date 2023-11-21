@@ -59,7 +59,7 @@ function generateTable(table, data) {
 
 
 let Everday = [
-  { exercises: "Breathing Exercises", sets: 1, reps: 1 },
+  { exercises: "Breathing Exercises", sets: 0, reps: 0 },
   { exercises: "Press ups", sets: 3, reps: 5 },
   { exercises: "Crunches", sets: 3, reps: 5 },
   { exercises: "Finger-tip Press ups", sets: 3, reps: 5 },
@@ -71,7 +71,7 @@ let Everday = [
   { exercises: "Finger-tip Press ups", sets: 3, reps: 5 },
   { exercises: "Bent Knee Sit-ups", sets: 3, reps: 5 },
   { exercises: "Wide Arm Press ups", sets: 3, reps: 5 }
-  ];
+];
 
 let table11 = document.querySelector("table.everyday2");
 generateTable(table11, Everday);
@@ -148,3 +148,21 @@ let AdvWeights = [
 let table8 = document.querySelector("table.advweights");
 generateTable(table8, AdvWeights);
 
+
+
+
+/* 
+<h3>Timed Swim</h3>
+{ exercises: "4 Laps 3mins", Rest 3, mins },
+{ exercises: "8 Laps 6mins", Rest 6 mins },
+{ exercises: "16 Laps 12 mins", Rest 6 mins },
+{ exercises: "8 Laps 6mins", Rest 3, mins },
+{ exercises: "4 Laps 3mins }
+
+<h3>Runs</h3>
+{ exercises: "Short Run<td>5 km 30 minutes },
+{ exercises: "Fun Run<td>8.5 km },
+{ exercises: "Fast Run<td>5 km fast as possible },
+{ exercises: "Long Run<td>16 km },
+{ exercises: "Fun Swim<td> 30 mins vary strokes }, 
+*/

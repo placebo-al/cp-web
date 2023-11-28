@@ -11,11 +11,11 @@ this.innerHTML = `
 </header>
 <nav id="main">
   <ul>
-    <li><a href="./Coreperformance-Essentials.html">Essentials</a></li>
-    <li><a href="./Coreperformance-Phase1.html">Phase One</a></li>
-    <li><a href="./Coreperformance-Phase2.html">Phase Two</a></li>
-    <li><a href="./Coreperformance-Phase3.html">Phase Three</a></li>
-    <li><a href="./Coreperformance-Phase4.html">Phase Four</a></li>
+  <li><a href="./CP-Workouts/Coreperformance-Essentials.html">Essentials</a></li>
+  <li><a href="./CP-Workouts/Coreperformance-Phase1.html">Phase One</a></li>
+  <li><a href="./CP-Workouts/Coreperformance-Phase2.html">Phase Two</a></li>
+  <li><a href="./CP-Workouts/Coreperformance-Phase3.html">Phase Three</a></li>
+  <li><a href="./CP-Workouts/Coreperformance-Phase4.html">Phase Four</a></li>
   </ul>
 </nav>
 

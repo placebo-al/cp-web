@@ -58,17 +58,17 @@ function generateTable(table, data) {
 }
 
 let AbsandPushups = [
-  { exercise: "Press ups", sets: 3, reps: 5 },
-  { exercise: "Crunches", sets: 3, reps: 5 },
-  { exercise: "Finger-tip Press ups", sets: 3, reps: 5 },
-  { exercise: "Bent Knee Sit-ups", sets: 3, reps: 5 },
-  { exercise: "Wide Arm Press ups", sets: 3, reps: 5 },
-  { exercise: "Hand Slides", sets: 3, reps: 5 },
-  { exercise: "Press ups", sets: 3, reps: 5 },
-  { exercise: "Leg Raises", sets: 3, reps: 5 },
-  { exercise: "Finger-tip Press ups", sets: 3, reps: 5 },
-  { exercise: "Bent Knee Sit-ups", sets: 3, reps: 5 },
-  { exercise: "Wide Arm Press ups", sets: 3, reps: 5 }
+  { exercise: "Press ups", sets: 1, reps: 5 },
+  { exercise: "Crunches", sets: 1, reps: 5 },
+  { exercise: "Finger-tip Press ups", sets: 1, reps: 5 },
+  { exercise: "Bent Knee Sit-ups", sets: 1, reps: 5 },
+  { exercise: "Wide Arm Press ups", sets: 1, reps: 5 },
+  { exercise: "Hand Slides", sets: 1, reps: 5 },
+  { exercise: "Press ups", sets: 1, reps: 5 },
+  { exercise: "Leg Raises", sets: 1, reps: 5 },
+  { exercise: "Finger-tip Press ups", sets: 1, reps: 5 },
+  { exercise: "Bent Knee Sit-ups", sets: 1, reps: 5 },
+  { exercise: "Wide Arm Press ups", sets: 1, reps: 5 }
 ];
 
 let table = document.querySelector("table.AbsPushups");

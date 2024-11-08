@@ -10,13 +10,13 @@ this.innerHTML = `
     <h1><a href="../index.html">CP Workouts.</a></h1>
 </header>
 <nav id="main">
-  <ul>
-  <li><a href="./CP-Workouts/Coreperformance-Essentials.html">Essentials</a></li>
-  <li><a href="./CP-Workouts/Coreperformance-Phase1.html">Phase One</a></li>
-  <li><a href="./CP-Workouts/Coreperformance-Phase2.html">Phase Two</a></li>
-  <li><a href="./CP-Workouts/Coreperformance-Phase3.html">Phase Three</a></li>
-  <li><a href="./CP-Workouts/Coreperformance-Phase4.html">Phase Four</a></li>
-  </ul>
+    <ul>
+      <li><a href="./CP-Workouts/Coreperformance-Essentials.html">Essentials</a></li>
+      <li><a href="./CP-Workouts/Coreperformance-Phase1.html">Phase One</a></li>
+      <li><a href="./CP-Workouts/Coreperformance-Phase2.html">Phase Two</a></li>
+      <li><a href="./CP-Workouts/Coreperformance-Phase3.html">Phase Three</a></li>
+      <li><a href="./CP-Workouts/Coreperformance-Phase4.html">Phase Four</a></li>
+    </ul>
 </nav>
 
 <script>

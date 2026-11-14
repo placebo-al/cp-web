@@ -1,0 +1,7 @@
+{
+  "name": "cp-workout-library",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/navigation.test.cjs"
+  }
+}

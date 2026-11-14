@@ -1,55 +1,23 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <script async src="index.js"></script>
-  <link rel="stylesheet" href="./style.css" />
-  <Title>My Webpage</Title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workout library | CP, Essentials and SAS</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./index.js" defer></script>
 </head>
-
 <body>
-  <header>
-    <h1><a href="../index.html">CP Workouts.</a></h1>
-  </header>
-  <nav id="main">
-    <ul>
-      <li><a href="./CP-Workouts/Coreperformance-Essentials.html">Essentials</a></li>
-      <li><a href="./CP-Workouts/Coreperformance-Phase1.html">Phase One</a></li>
-      <li><a href="./CP-Workouts/Coreperformance-Phase2.html">Phase Two</a></li>
-      <li><a href="./CP-Workouts/Coreperformance-Phase3.html">Phase Three</a></li>
-      <li><a href="./CP-Workouts/Coreperformance-Phase4.html">Phase Four</a></li>
-    </ul>
-    <ul>
-      <li><a href="./sas/Beginner.html">SAS Beginner</a></li>
-      <li><a href="./sas/Intermediate.html">SAS Intermediate</a></li>
-      <li><a href="./sas/Advanced.html">SAS Advanced</a></li>
-      <li><a href="./sas/Professional.html">SAS Professional</a></li>
-    </ul>
-
-  </nav>
-
-  <h2>Hello World!</h2>
-  <h5 id='date'></h5>
-
-  <script>
-    const nav = document.querySelector('#main');
-    let topOfNav = nav.offsetTop;
-
-    function fixNav() {
-      if (window.scrollY >= topOfNav) {
-        document.body.style.paddingTop = nav.offsetHeight + 'px';
-        document.body.classList.add('fixed-nav');
-      } else {
-        document.body.classList.remove('fixed-nav');
-        document.body.style.paddingTop = 0;
-      }
-    }
-
-    window.addEventListener('scroll', fixNav);    
-  </script>
-
-  </div>
+  <header-component></header-component>
+  <main class="library-page">
+    <p class="eyebrow">Your training programmes</p>
+    <h1>Choose your workout</h1>
+    <p class="page-intro">Three separate programmes. Pick the one you’re following to see its schedule and exercises.</p>
+    <section class="programme-grid" aria-label="Choose a programme">
+      <a class="programme-card" href="./CP-Workouts/index.html"><span class="eyebrow">12-week programme</span><h2>Core Performance</h2><p>Four phases, with weekly schedules and exercise tables organised like the workbook.</p><span class="card-action">Choose a phase →</span></a>
+      <a class="programme-card" href="./CP-Workouts/Coreperformance-Essentials.html"><span class="eyebrow">Standalone programme</span><h2>Essentials</h2><p>Its own four levels, with movement prep, prehab, strength, cardio and regeneration.</p><span class="card-action">Open Essentials →</span></a>
+      <a class="programme-card" href="./sas/index.html"><span class="eyebrow">Four training levels</span><h2>SAS</h2><p>Beginner, Intermediate, Advanced and Professional schedules and workouts.</p><span class="card-action">Choose a level →</span></a>
+    </section>
+  </main>
 </body>
-
 </html>

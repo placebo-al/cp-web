@@ -1,0 +1,70 @@
+/* Shared layout for the generated daily session cards across all four phases. */
+.session-overview {
+  padding: 24px !important;
+  margin: 24px 0 40px;
+  background: #edf2ec;
+  border: 1px solid #d5dfd5;
+  border-radius: 12px;
+}
+.session-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 14px !important;
+}
+.session-heading h2, #workout-details > h2 { color: #233c30; font-size: 1.55rem; margin: 0 0 8px; }
+.session-heading p { margin: 0; color: #526157; }
+.session-heading .eyebrow { margin-bottom: 4px; }
+.session-heading .text-link { flex: none; color: #365b40; font-weight: 700; }
+.session-week { padding: 12px 0 0 !important; }
+.session-week > h3 { color: #294634; font-size: 1.1rem; margin: 8px 0 12px; }
+.session-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  padding: 0 !important;
+}
+.session-card {
+  min-width: 0;
+  padding: 14px !important;
+  background: #fff;
+  border: 1px solid #d5dfd5;
+  border-radius: 8px;
+}
+.session-card h4 { margin: 0 0 8px; font-size: 1rem; color: #233c30; }
+.session-card ol { display: grid; gap: 6px; padding-left: 1.35rem; margin: 0; }
+.session-card li { padding-left: 2px; }
+.session-component { color: #365b40; font-weight: 600; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.session-component:hover { color: #1f3728; }
+.session-component:not([href]) { color: #68756c; font-weight: 500; }
+.session-card .no-session { margin: 0; color: #68756c; font-size: .9rem; }
+#workout-content details { scroll-margin-top: 180px; }
+#workout-details { padding: 20px 0 0 !important; scroll-margin-top: 180px; }
+#workout-details > .eyebrow { margin: 0; }
+#workout-details > h2 { margin-bottom: 12px; }
+#workout-details details { scroll-margin-top: 180px; }
+.compact-strength { padding: 0 !important; }
+.prescription-note { color: #526157; margin: 8px 0 16px; }
+.compact-strength-group { padding: 0 0 14px !important; }
+.compact-strength-group > h4 { color: #52705a; text-transform: uppercase; letter-spacing: .04em; font-size: .85rem; margin: 12px 0 8px; }
+.prescription-card { padding: 14px !important; background: #f7f9f5; border: 1px solid #dce3dc; border-radius: 8px; margin: 8px 0; }
+.prescription-card > h5 { font-size: 1rem; font-weight: 700; margin: 0 0 10px; }
+.prescription-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; padding: 0 !important; }
+.prescription-cell { min-width: 0; display: flex; flex-direction: column; gap: 4px; padding: 8px !important; background: #fff; border-radius: 5px; }
+.prescription-cell > span { color: #68756c; font-size: .8rem; }
+.prescription-cell > strong { color: #294634; }
+.original-strength { margin-top: 14px !important; }
+.original-strength > summary { color: #365b40; font-weight: 700; }
+@media (max-width: 900px) {
+  .session-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .prescription-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .session-overview { padding: 16px !important; }
+  .session-heading { align-items: start; flex-direction: column; gap: 8px; }
+  .session-grid { grid-template-columns: 1fr; }
+  .prescription-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #workout-content details, #workout-details, #workout-details details { scroll-margin-top: 260px; }
+}
+.phase-goal { font-size: 1.15rem; line-height: 1.5; font-weight: 650; margin: 12px 0 24px; }

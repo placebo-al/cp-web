@@ -8,6 +8,7 @@
   const isEssentials = current === new URL(essentials, root).pathname;
   const isCP = current.startsWith(new URL('CP-Workouts/', root).pathname) && !isEssentials;
   const isSAS = current.startsWith(new URL('sas/', root).pathname);
+  const isStrength = current.startsWith(new URL('Performance-Strength/', root).pathname);
   const link = (path, label, active = current === new URL(path, root).pathname) =>
     `<a href="${href(path)}"${active ? ' aria-current="page"' : ''}>${label}</a>`;
 
@@ -23,13 +24,14 @@
       this.innerHTML = `
         <header class="site-header">
           <a class="site-brand" href="${href('index.html')}">Workout library</a>
-          <span>Core Performance · Essentials · SAS</span>
+          <span>Core Performance · Essentials · SAS · Performance Strength</span>
         </header>
         <nav class="program-nav" aria-label="Workout programmes">
           ${link('index.html', 'Home')}
           ${link('CP-Workouts/index.html', 'Core Performance', isCP)}
           ${link(essentials, 'Essentials', isEssentials)}
           ${link('sas/index.html', 'SAS', isSAS)}
+          ${link('Performance-Strength/index.html', 'Performance Strength', isStrength)}
         </nav>
         ${isCP ? `<nav class="workout-nav" aria-label="Core Performance phases">${phases.map(([path, label]) => link(`CP-Workouts/${path}`, label)).join('')}</nav>` : ''}
         ${isSAS ? `<nav class="workout-nav" aria-label="SAS levels">${levels.map((level) => link(`sas/${level}.html`, level)).join('')}</nav>` : ''}

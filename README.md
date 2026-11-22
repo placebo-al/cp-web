@@ -4,6 +4,7 @@ My workout library, moving the routines from Excel into a browser to practise Ja
 
 - **Core Performance:** four phases covering weeks 1–3, 4–6, 7–9 and 10–12.
 - **Essentials:** a separate programme with its own four levels and stage progression.
+- **Performance Strength:** Foundation, Get Stable, Get Strong, Work and Get Powerful. Each stage has three weeks and four workout days: Power A, B, C and D. Prescriptions follow the detailed stage sheets, with empty fields omitted.
 - **SAS:** Beginner, Intermediate, Advanced and Professional workouts.
 
 The CP week ranges follow the `Week1-3`, `Week4-6`, `Week7-9` and `Week10-12` sheets in the reference workbook. Essentials corresponds to `CP-Essentials`. The workbook is a local reference and is not published in this repository.

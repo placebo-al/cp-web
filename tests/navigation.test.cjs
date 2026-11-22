@@ -7,7 +7,7 @@ const vm = require('node:vm');
 const root = path.resolve(__dirname, '..');
 const read = (file) => fs.readFileSync(path.join(root, file), 'utf8');
 const pages = [
-  'index.html', 'CP-Workouts/index.html', 'CP-Workouts/Coreperformance-Essentials.html',
+  'index.html', 'Performance-Strength/index.html', 'CP-Workouts/index.html', 'CP-Workouts/Coreperformance-Essentials.html',
   ...[1, 2, 3, 4].map((n) => `CP-Workouts/Coreperformance-Phase${n}.html`),
   'sas/index.html', ...['Beginner', 'Intermediate', 'Advanced', 'Professional'].map((n) => `sas/${n}.html`)
 ];
@@ -57,9 +57,9 @@ test('Essentials is independent; phase and SAS navigation only appear in their p
   }
 });
 
-test('home has three separate programme choices and workbook week ranges are represented', () => {
-  assert.equal([...read('index.html').matchAll(/class="programme-card"/g)].length, 3);
-  for (const target of ['CP-Workouts/index.html', 'CP-Workouts/Coreperformance-Essentials.html', 'sas/index.html']) assert.ok(read('index.html').includes(target));
+test('home has four separate programme choices and workbook week ranges are represented', () => {
+  assert.equal([...read('index.html').matchAll(/class="programme-card"/g)].length, 4);
+  for (const target of ['Performance-Strength/index.html', 'CP-Workouts/index.html', 'CP-Workouts/Coreperformance-Essentials.html', 'sas/index.html']) assert.ok(read('index.html').includes(target));
   for (const weeks of ['1–3', '4–6', '7–9', '10–12']) assert.ok(read('CP-Workouts/index.html').includes(`Weeks ${weeks}`));
 });
 
@@ -94,3 +94,9 @@ test('SAS scripts populate their own tables and tolerate tables absent on other 
   }
   assert.doesNotMatch(read('sas/Professional.html'), /src="\.\/Index-SAS\.js"/);
 });
+
+ test('Performance Strength has independent navigation', () => {
+ const header = headerAt('Performance-Strength/index.html');
+ assert.match(header, /aria-current="page">Performance Strength/);
+ assert.doesNotMatch(header, /aria-label="Core Performance phases"|aria-label="SAS levels"/);
+ });
